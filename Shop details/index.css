@@ -57,7 +57,7 @@ body {
     font-weight: 450;
 }
 .utitle {
-    color: #E81919;
+    color: #083db2;;
     text-align: center;
     font-weight: 800;
     font-size: 30px;
@@ -65,14 +65,166 @@ body {
     font-family: 'Poppins', sans-serif;
     margin-top: 100px;
 }
+/* Upload Section */
+.upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Adjust height if needed */
+    text-align: center;
+}
+
+.upload-box {
+    border: 2px solid black; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px 60px; /* Padding inside the box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px; /* Adjust width if needed */
+    height: 180px; /* Adjust height to suit the content */
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-icon {
+    width: 50px; /* Adjust the size of the icon */
+    margin-bottom: 20px; /* Space between icon and text */
+}
+
+.upload p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+.file-input {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.upload-box.dragover {
+    background-color: #e0e0e0;
+    border-color: #000;
+}
+.rating p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.if{
+    margin-top: -20px;
+}
+.rating{
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+
+/* Button container for centering */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh; /* Adjust the height to position it vertically */
+}
+
+
+/* Button styling */
+.proceed-btn {
+    border: 3px solid black;
+    color:black;
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from link */
+    text-align: center; /* Center text */
+    display: inline-flex; /* Allows centering text */
+    justify-content: center; /* Center the text */
+    align-items: center; /* Center the text vertically */
+    
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover effect */
+.proceed-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Carousel Card Custom Styles */
+.review-card {
+    width: 20rem;
+    height: 50rem;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.joincard{
+    display: flex;
+    column-gap: 8px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 40px;
+    height: 40px;
+}
+.rounded-circle{
+    border: 1.8px solid black;
+}
+
+/* Star Rating */
+.stars {
+    color: #083db2;
+    display: flex;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+/* Custom text style for carousel cards */
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 500;
+}
+
+/* Ensure carousel item alignment */
+.carousel-item {
+    display: flex;
+    padding: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    filter: invert(1);
+}
+
 
 /* Responsive styling */
 @media (max-width: 768px) {
     .circleimg {
         width: 110px;
         height: 110px;
-        left: 8px;
-        bottom: -60px;
+        border-radius: 3px solid black;
     }
     .title{
         margin-left: 50px;
