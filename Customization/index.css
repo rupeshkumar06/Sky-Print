@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+.shop {
+    background-image: url('/Pics/colour splash.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    height: 100px; /* Adjust the height as needed */
+}
+.shop .title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Customization */
+.customiztion {
+    text-align: center;
+}
+.cstitle {
+    color: #083db2;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-left: 35px;
+}
+
+/* Form styles */
+.form1 h2,
+.form2 h2,
+.form3 h2,
+.form4 h2 {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 37px;
+}
+
+/* Style for the label to align text with the radio button */
+label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 20px; /* Add space between options if needed */
+    margin-left: 70px;
+}
+
+/* Hide the default radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #000000; /* Outline color */
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    margin-right: 8px;
+    top: 3px;
+}
+
+/* Create the inner circle for the checked state */
+input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #000000; /* Checked circle color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Text input styling */
+input[type="text"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 137px;
+    height: 39.69px;
+    border: 2px solid #083DB2; /* Outline color */
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    margin-right: 8px;
+}
+
+/* Button container for centering */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    height: 62px; /* Height for the container */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.proceed-btn {
+    width: 264px; /* Set the width */
+    height: 62px; /* Set the height */
+    border: none;
+    padding: 10px 20px; /* Padding inside the button */
+    background-color: #083DB2; /* Background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    cursor: pointer; /* Pointer cursor */
+    text-decoration: none; /* Remove underline from link */
+    text-align: center; /* Center text */
+    display: inline-flex; /* Allows centering text */
+    justify-content: center; /* Center the text */
+    align-items: center; /* Center the text vertically */
+    transition: transform 0.3s ease; /* Add transition */
+}
+
+.proceed-btn:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
